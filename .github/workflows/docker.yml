@@ -24,8 +24,8 @@ jobs:
             exit 1
           fi
 
-          echo "DOCKER_USERNAME está configurado"
-          echo "DOCKER_PASSWORD está configurado"
+          echo DOCKER_USERNAME
+          echo DOCKER_PASSWORD
       - name: Iniciar sesión en Docker Hub
         uses: docker/login-action@v3
         with:
